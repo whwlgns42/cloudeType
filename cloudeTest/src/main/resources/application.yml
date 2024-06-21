@@ -1,0 +1,22 @@
+spring:
+  thymeleaf:
+    check-template-location: true
+    prefix: classpath:/templates/   # .html 파일을 불러오기 위한 경로 설정(src/main/resources/templates)
+    suffix: .html   # 파일 확장자
+    cache: false
+    
+    
+    
+  datasource:
+    url: jdbc:mariadb://localhost:3306/jtest
+    username: root
+    password: ALStn840!
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update # 옵션: create, create-drop, update, validate, none 초기에는 create, 이후에는 update로 변경 가능
+    show-sql: true # true로 하면 디버깅하기 좋음
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect

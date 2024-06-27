@@ -4,7 +4,7 @@ spring:
     prefix: classpath:/templates/   # .html 파일을 불러오기 위한 경로 설정(src/main/resources/templates)
     suffix: .html   # 파일 확장자
     cache: false
-    
+
     
     
   datasource:
@@ -12,6 +12,9 @@ spring:
     username: ${DB_name}
     password: ${DB_password}
     driver-class-name: org.mariadb.jdbc.Driver
+
+
+
     
 
   jpa:
@@ -21,3 +24,5 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MariaDBDialect
+server:
+  port: 8888    

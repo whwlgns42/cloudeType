@@ -12,4 +12,12 @@ public class MainController {
 		return "main";
 	}
 	
+	
+	@GetMapping("/loginPage")
+	public String loginPage() {
+		System.out.println( " [로그 확인 ] 로그인 페이지 이동: " );
+		
+		return "loginPage";
+	}
+	
 }
